@@ -64,7 +64,7 @@ int dequeue(int queue[]){
             front=-1;
             rear=-1;
         }else
-            front++;
+            front=(front+1)%MAX;
         return ele;
     }
 }
